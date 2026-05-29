@@ -822,23 +822,23 @@ function responder(valor) {
 
 function definirNivel() {
 
-  if (pontuacaoFase1 > 6*14) {
+  if (pontuacaoFase1 > 7*14) {
 
     nivel = "Hétero";
 
     perguntasAtuais = perguntasBem;
   }
 
-  else if (pontuacaoFase1 =5.9*14) {
+  else if (pontuacaoFase1 <7*14) {
 
-    nivel = "Bi";
+    nivel = "Gay";
 
     perguntasAtuais = perguntasMedio;
   }
 
   else {
 
-    nivel = "Gay";
+    nivel = "Bi";
 
     perguntasAtuais = perguntasMal;
   }
