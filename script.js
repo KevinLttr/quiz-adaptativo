@@ -417,7 +417,7 @@ const perguntasBem = [
 
 
 
-const perguntasMedio = [
+const perguntasMal = [
 
   {
 
@@ -535,7 +535,7 @@ const perguntasMedio = [
 
 
 
-const perguntasMal = [
+const perguntasMedio = [
 
   {
 
