@@ -243,7 +243,54 @@ const perguntasIniciais = [
 
     ]
   },
+
+  {
+
+    pergunta: "Conhece a Camila Loures?",
+
+    imagem: "imagens/pergunta12.jpg",
+
+    respostas: [
+      { texto: "Sei quem é", valor: 0 },
+      { texto: "Já ouvi falar", valor: 5 },
+      { texto: "Não Conheço", valor: 9 }
+
+    ]
+  },
+
+  {
+
+    pergunta: "Para o auto cuidado vc usa:",
+
+    imagem: "imagens/pergunta13.webp",
+
+    respostas: [
+      { texto: "Só sabonete 3 em 1", valor: 9 },
+      { texto: "Só Shampoo e sabonete", valor: 6 },
+      { texto: "Uso acondicionador", valor: 3 },
+      { texto: "Faço skin care", valor: 0 }
+
+    ]
+  },
+
+   {
+
+    pergunta: "Você sabe bater leque:",
+
+    imagem: "imagens/pergunta14.jpg",
+
+    respostas: [
+      { texto: "O que é bater leque?", valor: 9 },
+      { texto: "Não sei não", valor: 6 },
+      { texto: "Mais ou menos", valor: 3 },
+      { texto: "Sei com certeza", valor: 0 }
+
+    ]
+  },
+
 ];
+
+
 
 
 
@@ -357,7 +404,7 @@ const perguntasBem = [
       { texto: "Super velocidade", valor: 10 },
       { texto: "Ser um Transmorfo", valor: 10 },
       { texto: "Voar", valor: 5 },
-      { texto: "Manipulação do tempo", valor: 5 },
+      { texto: "Fazer clones", valor: 5 },
       { texto: "Falar com os animais", valor: 3 },
       { texto: "Telepatia", valor: 0 },
       { texto: "Teletransporte", valor: 0 },
@@ -475,7 +522,7 @@ const perguntasMedio = [
       { texto: "Super velocidade", valor: 10 },
       { texto: "Ser um Transmorfo", valor: 0 },
       { texto: "Voar", valor: 10 },
-      { texto: "Manipulação do tempo", valor: 0 },
+      { texto: "Fazer clones", valor: 0 },
       { texto: "Falar com os animais", valor: 0 },
       { texto: "Telepatia", valor: 0 },
       { texto: "Teletransporte", valor: 10 },
@@ -775,14 +822,14 @@ function responder(valor) {
 
 function definirNivel() {
 
-  if (pontuacaoFase1 > 66) {
+  if (pontuacaoFase1 > 6*11) {
 
     nivel = "Hétero";
 
     perguntasAtuais = perguntasBem;
   }
 
-  else if (pontuacaoFase1 > 54) {
+  else if (pontuacaoFase1 =5.9*11) {
 
     nivel = "Bi";
 
@@ -954,7 +1001,7 @@ function desenharGraficos() {
     Math.min(
       100,
       Math.round(
-        100 - (((pontuacaoFase1 / 110) - 0.5) * 200)
+        100 - ((pontuacaoFase1 / 110)*83 )
       )
     )
   );
@@ -1058,7 +1105,7 @@ function desenharGraficos() {
   canvasClasse.height = 300;
 
   const porcentagemClasse =
-    (Math.round((pontuacaoFase2-10 / pontuacaoFase2) * 100)*0.2)+80;
+    (Math.round(pontuacaoFase2 / 50)*20)+80;
 
   const anguloClasse =
     (porcentagemClasse / 100) *

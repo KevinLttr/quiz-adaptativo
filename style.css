@@ -60,7 +60,7 @@ h2 {
   text-align: center;
 }
 
-input {
+input,select {
 
   width: 100%;
 
@@ -73,6 +73,13 @@ input {
   margin-bottom: 15px;
 
   font-size: 16px;
+
+  font-size: 16px;
+
+  background: white;
+
+  color: black;
+
 }
 
 button {
