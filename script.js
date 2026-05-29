@@ -909,17 +909,17 @@ function definirClassificacaoFinal() {
 
     else if (pontuacaoFase2 >= (7*6)) {
 
-      classificacaoFinal = "Versátil+Ativo";
+      classificacaoFinal = "VersAt";
     }
 
     else if (pontuacaoFase2 >= (5*6)) {
 
-      classificacaoFinal = "Versátil";
+      classificacaoFinal = "Vers";
     }
 
     else if (pontuacaoFase2 >= (3*6)) {
 
-      classificacaoFinal = "Versátil+Passivo";
+      classificacaoFinal = "VersPass";
     }
 
     else if (pontuacaoFase2 >= (1*6)) {
