@@ -822,14 +822,14 @@ function responder(valor) {
 
 function definirNivel() {
 
-  if (pontuacaoFase1 > 6*11) {
+  if (pontuacaoFase1 > 6*14) {
 
     nivel = "Hétero";
 
     perguntasAtuais = perguntasBem;
   }
 
-  else if (pontuacaoFase1 =5.9*11) {
+  else if (pontuacaoFase1 =5.9*14) {
 
     nivel = "Bi";
 
@@ -1001,7 +1001,7 @@ function desenharGraficos() {
     Math.min(
       100,
       Math.round(
-        100 - ((pontuacaoFase1 / 110)*83 )
+        100 - ((pontuacaoFase1 / 140)*83 )
       )
     )
   );
@@ -1186,13 +1186,13 @@ function atualizarBarra() {
   if (fase === 1) {
 
     progresso =
-      (indicePergunta / 17) * 100;
+      (indicePergunta / 20) * 100;
   }
 
   else {
 
     progresso =
-      ((11 + indicePergunta) / 17) * 100;
+      ((14 + indicePergunta) / 20) * 100;
   }
 
   document
