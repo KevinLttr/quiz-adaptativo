@@ -417,7 +417,7 @@ const perguntasBem = [
 
 
 
-const perguntasMal = [
+const perguntasMedio = [
 
   {
 
@@ -535,7 +535,7 @@ const perguntasMal = [
 
 
 
-const perguntasMedio = [
+const perguntasMal = [
 
   {
 
@@ -833,14 +833,14 @@ function definirNivel() {
 
     nivel = "Gay";
 
-    perguntasAtuais = perguntasMedio;
+    perguntasAtuais = perguntasMal;
   }
 
   else {
 
     nivel = "Bi";
 
-    perguntasAtuais = perguntasMal;
+    perguntasAtuais = perguntasMedio;
   }
 
   fase = 2;
